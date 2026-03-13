@@ -17,8 +17,8 @@ GITHUB_API_REST=$2
 
 GITHUB_API_HEADER_ACCEPT="Accept: application/vnd.github.v3+json"
 
-temp=`basename $0`
 TMPFILE=`mktemp /tmp/${temp}.XXXXXX` || exit 1
+trap "rm -f $TMPFILE" EXIT
 
 
 function rest_call {
