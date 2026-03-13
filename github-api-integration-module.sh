@@ -1,15 +1,10 @@
-#!/bin/bash
+
 ################################
 # Author: Abhishek
 # Version: v1
-#
-#
-#
-# This script will help users to communicate and retrieve information from GitHub
-# Usage:
-#   Please provide your github token and rest api to the script as input
-#
-#
+# Description: Script to communicate with GitHub API
+# Dependencies: curl, GitHub token
+# Usage: ./script.sh [token] [API endpoint]
 ################################
 
 if [ ${#@} -lt 2 ]; then
